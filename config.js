@@ -63,7 +63,10 @@ var config = {
 		},
 		{
 			module: "compliments",
-			position: "lower_third"
+			position: "lower_third",
+			config: {
+				remoteFile: 'https://github.com/tjay22/MagicMirror-config/raw/main/compliments.json'
+			}
 		},
 		{
 			module: "currentweather",
@@ -71,7 +74,7 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "2867a1fed998b01eb552578c66df09fd"
 			}
 		},
 		{
@@ -81,7 +84,7 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "Y2867a1fed998b01eb552578c66df09fd"
 			}
 		},
 		{
