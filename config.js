@@ -85,6 +85,14 @@ var config = {
 			}
 		},
 		{
+			module: 'mmm-systemtemperature',
+			position: 'top_right',	// This can be any of the regions.
+			classes: 'small dimmed', // Add your own styling. Optional.
+			config: {
+				unit: "f"
+			}
+		},
+		{
 			module: "currentweather",
 			position: "top_right",
 			config: {
@@ -131,14 +139,6 @@ var config = {
 					apiKey: "",         // Optional, See API/README.md for details
 			}
 		},
-		{
-			module: 'mmm-systemtemperature',
-			position: 'top_right',	// This can be any of the regions.
-			classes: 'small dimmed', // Add your own styling. Optional.
-			config: {
-				// See 'Configuration options' for more information.
-			}
-		}
 	]
 };
 
