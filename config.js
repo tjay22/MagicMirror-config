@@ -55,10 +55,11 @@ var config = {
 			position: "top_left",
 			showLocation: true,
 			displayRepeatingCountTitle: true,
+			tableClass: "xsmall",
 			titleReplace: {
 				"'s birthday": "'s birthday"
 			},
-			timeFormat: "absolute",
+			timeFormat: "dateheaders",
 			config: {
 				calendars: [
 					{
