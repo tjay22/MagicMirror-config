@@ -53,14 +53,14 @@ var config = {
 			module: "calendar",
 			header: "Calendar",
 			position: "top_left",
-			showLocation: true,
-			displayRepeatingCountTitle: true,
-			tableClass: "xsmall",
-			titleReplace: {
-				"'s birthday": "'s birthday"
-			},
-			timeFormat: "dateheaders",
 			config: {
+				showLocation: true,
+				displayRepeatingCountTitle: true,
+				tableClass: "xsmall",
+				titleReplace: {
+					"'s birthday": "'s birthday"
+				},
+				timeFormat: "dateheaders",
 				calendars: [
 					{
 						symbol: "glass-cheers",
