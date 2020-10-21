@@ -65,7 +65,7 @@ var config = {
 			module: "compliments",
 			position: "lower_third",
 			config: {
-				remoteFile: 'https://github.com/tjay22/MagicMirror-config/raw/main/compliments.json'
+				remoteFile: 'https://raw.githubusercontent.com/tjay22/MagicMirror-config/main/compliments.json'
 			}
 		},
 		{
