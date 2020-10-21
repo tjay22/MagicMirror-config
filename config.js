@@ -51,14 +51,14 @@ var config = {
 		},
 		{
 			module: "calendar",
-			header: "McCoy Calendar",
+			header: "Calendar",
 			position: "top_left",
 			showLocation: true,
 			displayRepeatingCountTitle: true,
 			titleReplace: {
 				"'s birthday": "'s birthday"
 			},
-			timeFormat: "dateheaders",
+			timeFormat: "absolute",
 			config: {
 				calendars: [
 					{
@@ -133,7 +133,11 @@ var config = {
 			//position: 'bottom_left',
 			// you can hide this module afterwards from the remote control itself
 			config: {
-					customCommand: {},  // Optional, See "Using Custom Commands" below
+					customCommand: { 
+						monitorOnCommand: 'vcgencmd display_power 1', 
+						monitorOffCommand: 'vcgencmd display_power 0', 
+						monitorStatusCommand: 'if vcgencmd display_power | grep 1 >/dev/null 2>&1; then echo true; else echo false; fi'
+					},
 					customMenu: "custom_menu.json", // Optional, See "Custom Menu Items" below
 					showModuleApiMenu: true, // Optional, Enable the Module Controls menu
 					apiKey: "",         // Optional, See API/README.md for details
