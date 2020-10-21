@@ -57,7 +57,12 @@ var config = {
 				calendars: [
 					{
 						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"					}
+						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"
+					},
+					{
+						symbol: "calendar-check",
+						url: "https://calendar.google.com/calendar/ical/teejay22%40gmail.com/private-09ab1445f16d90a075a4fe03853ec4d1/basic.ics"
+					}
 				]
 			}
 		},
@@ -84,7 +89,7 @@ var config = {
 			config: {
 				location: "Hope Valley",
 				locationID: "5222665", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "Y2867a1fed998b01eb552578c66df09fd"
+				appid: "2867a1fed998b01eb552578c66df09fd"
 			}
 		},
 		{
