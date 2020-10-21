@@ -51,7 +51,7 @@ var config = {
 		},
 		{
 			module: "calendar",
-			header: "US Holidays",
+			header: "McCoy Calendar",
 			position: "top_left",
 			config: {
 				calendars: [
@@ -62,6 +62,10 @@ var config = {
 					{
 						symbol: "calendar-check",
 						url: "https://calendar.google.com/calendar/ical/teejay22%40gmail.com/private-09ab1445f16d90a075a4fe03853ec4d1/basic.ics"
+					}
+					{
+						symbol: "birthday-cake",
+						url: "https://calendar.google.com/calendar/ical/2vppgkgcemhpv1sffpk8mqtubc%40group.calendar.google.com/private-ea2106bad21b3406d47a9a42252d5083/basic.ics"
 					}
 				]
 			}
