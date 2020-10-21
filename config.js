@@ -58,7 +58,7 @@ var config = {
 			titleReplace: {
 				"'s birthday": "'s birthday"
 			},
-			timeFormat: "dateHeaders",
+			timeFormat: "dateheaders",
 			config: {
 				calendars: [
 					{
@@ -72,7 +72,6 @@ var config = {
 					{
 						symbol: "birthday-cake",
 						url: "https://calendar.google.com/calendar/ical/2vppgkgcemhpv1sffpk8mqtubc%40group.calendar.google.com/private-ea2106bad21b3406d47a9a42252d5083/basic.ics",
-
 						repeatingCountTitle: "Birthday"
 					}
 				]
