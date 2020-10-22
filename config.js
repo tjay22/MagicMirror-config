@@ -121,9 +121,9 @@ var config = {
 		},
 		{
 			module: "MMM-homeassistant-sensors",
-			header: "3D Printer",
 			position: "bottom_right",
 			config: {
+				title: "3D Printer",
 				host: "192.168.0.160",
 				port: "8123",
 				https: false,
@@ -161,6 +161,7 @@ var config = {
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
+			disabled: true,
 			config: {
 				feeds: [
 					{
