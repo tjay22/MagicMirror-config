@@ -54,6 +54,7 @@ var config = {
 			header: "Calendar",
 			position: "top_left",
 			config: {
+				maximumEntries: 7,
 				showLocation: true,
 				tableClass: "xsmall",
 				titleReplace: {
@@ -125,6 +126,13 @@ var config = {
 				showPublishDate: true,
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
+			}
+		},
+		{
+			module: 'MMM-QRCode',
+			position: "bottom_left",
+			config: {
+				// See 'Configuration options' for more information.
 			}
 		},
 		{
