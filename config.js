@@ -129,11 +129,12 @@ var config = {
 			}
 		},
 		{
-			module: 'MMM-QRCode',
-			position: "bottom_left",
+			module: "MMM-ip",
+			position: "bottom_right",
 			config: {
-				text: "WiFi"
-				// See 'Configuration options' for more information.
+				showFamily: "IPv4",
+				showType: "wlan0",
+				startHidden: true		
 			}
 		},
 		{
