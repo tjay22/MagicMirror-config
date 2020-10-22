@@ -17,7 +17,7 @@ var config = {
 	port: 8080,
 	basePath: "/", 	// The URL path where MagicMirror is hosted. If you are using a Reverse proxy
 					// you must set the sub path here. basePath must end with a /
-	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1", "192.168.0.155", "::ffff:192.168.0.155", "192.168.0.54", "::ffff:192.168.0.54"], 	// Set [] to allow all IP addresses
+	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.0.1/120", "192.168.0.1/24"], 	// Set [] to allow all IP addresses
 															// or add a specific IPv4 of 192.168.1.5 :
 															// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
 															// or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
@@ -86,14 +86,6 @@ var config = {
 			}
 		},
 		{
-			module: 'mmm-systemtemperature',
-			position: 'top_right',	// This can be any of the regions.
-			classes: 'small dimmed', // Add your own styling. Optional.
-			config: {
-				unit: "f"
-			}
-		},
-		{
 			module: "currentweather",
 			position: "top_right",
 			config: {
@@ -113,6 +105,24 @@ var config = {
 			}
 		},
 		{
+			module: 'mmm-systemtemperature',
+			position: 'bottom_left',	// This can be any of the regions.
+			classes: 'small dimmed', // Add your own styling. Optional.
+			config: {
+				unit: "f"
+			}
+		},
+		{
+			module: "MMM-ip",
+			position: "bottom_right",
+			config: {
+				fontSize: "10",
+				showFamily: "IPv4",
+				showType: "wlan0",
+				startHidden: false		
+			}
+		},
+		{
 			module: "newsfeed",
 			position: "bottom_bar",
 			config: {
@@ -126,15 +136,6 @@ var config = {
 				showPublishDate: true,
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
-			}
-		},
-		{
-			module: "MMM-ip",
-			position: "bottom_right",
-			config: {
-				showFamily: "IPv4",
-				showType: "wlan0",
-				startHidden: true		
 			}
 		},
 		{
