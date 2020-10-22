@@ -132,6 +132,7 @@ var config = {
 			module: 'MMM-QRCode',
 			position: "bottom_left",
 			config: {
+				text: "WiFi"
 				// See 'Configuration options' for more information.
 			}
 		},
