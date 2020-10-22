@@ -114,10 +114,38 @@ var config = {
 		},
 		{
 			module: "MMM-connection-status",
-			header: "Internet Connection",
-			position: "bottom_right", // Or any valid MagicMirror position.
+			position: "bottom_left", // Or any valid MagicMirror position.
 			config: {
 					// See 'Configuration options' for more information.
+			}
+		},
+		{
+			module: "MMM-homeassistant-sensors",
+			header: "3D Printer",
+			position: "bottom_right",
+			config: {
+				host: "192.168.0.160",
+				port: "8123",
+				https: false,
+				token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYzI4NjU4NWY0YWU0YTFjOWVhMWI4NzZkOTk4NmQ0ZSIsImlhdCI6MTYwMzM0MTQ3OCwiZXhwIjoxOTE4NzAxNDc4fQ.OuuvY0BLcA7JdZ3_KSVHLL3VYR4WRLptzFSsY-VFiFA",
+				displaySymbol: false,
+				values: [
+					{
+						sensor: "sensor.ender_3_pro_actual_bed_temp",
+					},
+					{
+						sensor: "sensor.ender_3_pro_actual_tool0_temp",
+					},
+					{
+						sensor: "sensor.ender_3_pro_job_percentage",
+					},
+					{
+						sensor: "sensor.ender_3_pro_time_elapsed",
+					},
+					{
+						sensor: "sensor.ender_3_pro_time_remaining",
+					},
+				]
 			}
 		},	
 		{
