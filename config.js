@@ -105,13 +105,21 @@ var config = {
 			}
 		},
 		{
-			module: 'mmm-systemtemperature',
-			position: 'bottom_left',	// This can be any of the regions.
-			classes: 'small dimmed', // Add your own styling. Optional.
+			module: "mmm-systemtemperature",
+			position: "bottom_left",	// This can be any of the regions.
+			classes: "small dimmed", // Add your own styling. Optional.
 			config: {
 				unit: "f"
 			}
 		},
+		{
+			module: "MMM-connection-status",
+			header: "Internet Connection",
+			position: "bottom_right", // Or any valid MagicMirror position.
+			config: {
+					// See 'Configuration options' for more information.
+			}
+		},	
 		{
 			module: "MMM-ip",
 			position: "bottom_right",
