@@ -10,7 +10,8 @@
     "afternoon" : [
         "Hitting your stride!",
         "You are making a difference!",
-        "You're more fun than bubble wrap!"
+        "You're more fun than bubble wrap!",
+	"You're doing great!"
     ],
     "evening" : [
         "You made someone smile today, I know it.",
@@ -26,8 +27,8 @@
 	"....-12-25": [
 	    "Merry Christmas!"
 	],
-	"....-10-22": [
-	    "Happy birthday, beautiful!"
+	"....-11-202": [
+	    "Happy birthday!!"
 	]
     
 }
