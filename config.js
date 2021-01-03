@@ -121,7 +121,7 @@ var config = {
     },
     {
       module: "MMM-NowPlayingOnSpotify",
-      position: "bottom-right",
+      position: "bottom_right",
     
       config: {
         clientID: "38c40ac5f2674a1bbc20975e5372e970",
@@ -142,8 +142,7 @@ var config = {
         types: [
           'eth0',
           'wlan0'
-        ],
-				startHidden: false		
+        ]
 			}
 		},
 		{
