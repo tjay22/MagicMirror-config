@@ -80,7 +80,6 @@ var config = {
 		},
 		{
 			module: "MMM-RemoteCompliments",
-			header: "MMM-RemoteCompliments",
 			position: "upper_third",
 			config: {
 					// See below for configurable options
