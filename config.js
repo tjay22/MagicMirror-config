@@ -77,18 +77,15 @@ var config = {
 					}
 				]
 			}
-    },
-    {
-      module: "MMM-NowPlayingOnSpotify",
-      position: "upper_third",
-    
-      config: {
-        clientID: "38c40ac5f2674a1bbc20975e5372e970",
-        clientSecret: "cc4ae6ba3c1a44a583b6d1d9187a760b",
-        accessToken: "BQCLf_Gz3Py4BD2mgL09pxL8aIbzyVBnDQg9Ee4saagLbNXWAUDBHrF1H2ZifyVgsPTJRZzTOWJzniHH5rxDd1EI02aaBLtmy1mB7rmeLtzoQWlv95tBAeCvz3ZVWReeKnGByOAncSzPnMdWdoS5CVk",
-        refreshToken: "AQAWwmkweQtjpUmasfv2FFzNblkoMF_y63r67wtzv5gf82aJvkxCZlOEPoQZhLrjr8kGI5y5mmd_vRzJ1r4U2pVk45T5DjV6c2tjbduzGLrvh3ClyA6N19hJWSBWSBdzD5I"
-      }
-    },
+		},
+		{
+			module: "MMM-RemoteCompliments",
+			header: "MMM-RemoteCompliments",
+			position: "upper_third",
+			config: {
+					// See below for configurable options
+			}
+		},
 		{
 			module: "compliments",
 			position: "lower_third",
@@ -129,12 +126,12 @@ var config = {
 			config: {
 					// See 'Configuration options' for more information.
 			}
-    },	
+		},
 		{
 			module: "MMM-ip",
-			position: "bottom_right",
+			position: "bottom_left",
 			config: {
-				fontSize: "10",
+				fontSize: "11",
         dimmed: true,
         families: [
           'IPv4'
@@ -145,6 +142,17 @@ var config = {
         ]
 			}
 		},
+		{
+      module: "MMM-NowPlayingOnSpotify",
+      position: "bottom_right",
+    
+      config: {
+        clientID: "38c40ac5f2674a1bbc20975e5372e970",
+        clientSecret: "cc4ae6ba3c1a44a583b6d1d9187a760b",
+        accessToken: "BQCLf_Gz3Py4BD2mgL09pxL8aIbzyVBnDQg9Ee4saagLbNXWAUDBHrF1H2ZifyVgsPTJRZzTOWJzniHH5rxDd1EI02aaBLtmy1mB7rmeLtzoQWlv95tBAeCvz3ZVWReeKnGByOAncSzPnMdWdoS5CVk",
+        refreshToken: "AQAWwmkweQtjpUmasfv2FFzNblkoMF_y63r67wtzv5gf82aJvkxCZlOEPoQZhLrjr8kGI5y5mmd_vRzJ1r4U2pVk45T5DjV6c2tjbduzGLrvh3ClyA6N19hJWSBWSBdzD5I"
+      }
+    },	
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
